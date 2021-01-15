@@ -1,2 +1,0 @@
-# TominoCZ.github.io
-asdfsdfsafdsd
