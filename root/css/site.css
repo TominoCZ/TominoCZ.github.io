@@ -1,0 +1,51 @@
+.center-title {
+    margin-bottom: 100px;
+    text-align: center;
+    background-color: rgb(39,40,34);
+    font-size:100px;
+}
+
+.center-wrap {
+    width: 50%;
+    margin: auto;
+}
+
+.center-item {
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(39,40,34);
+    width:unset;
+}
+
+body {
+    font-family: Consolas, monaco, monospace;
+    font-size: 24px;
+    background-color: rgb(27, 27, 23);
+    color: rgb(220,220,170);
+}
+
+a:link {
+    color: rgb(182, 255, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(182, 255, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
