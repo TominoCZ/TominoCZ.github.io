@@ -4,14 +4,29 @@
 }
 
 .message {
-    font-size:42px;
+    font-size: 42px;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: rgb(134, 255, 84);
+    width: 75%;
 }
 
-.title {
-    background-color: rgb(39,40,34);
-    font-size:100px;
+.splitter {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.title-wrap {
+    background-color: rgb(39, 40, 34);
+    font-size: 100px;
+}
+
+.title-left {
+    color: rgb(255, 84, 232);
+}
+
+.title-right {
+    color: rgb(84, 183, 255);
 }
 
 .list {
@@ -22,15 +37,23 @@
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(39,40,34);
-    width:unset;
+    background-color: rgb(39, 40, 34);
+    width: unset;
+}
+
+.track-title {
+    color: rgb(255, 220, 82);
+}
+
+.track-id {
+    color: rgb(84, 183, 255);
 }
 
 body {
     font-family: Consolas, monaco, monospace;
     font-size: 24px;
     background-color: rgb(27, 27, 23);
-    color: rgb(220,220,170);
+    color: rgb(220, 220, 170);
 }
 
 p {
