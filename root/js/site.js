@@ -5,31 +5,47 @@
     return data;
 }
 
-async function onfail(ex) {
+function onfail(ex) {
     alert("Failed to load data");
 
     console.error(ex);
 }
 
+function itemToNode(item) {
+    let elItem = document.createElement("div");
+    elItem.className = "item center";
+
+    let elName = document.createElement("p");
+    elName.className = "item-name";
+    elName.innerText = item.name;
+
+    let elID = document.createElement("p");
+    elID.className = "item-id";
+    elID.innerText = item.id;
+
+    elItem.appendChild(elName);
+    elItem.appendChild(elID);
+
+    return elItem;
+}
+
 async function load() {
     try {
         let data = await pull();
-
-        console.log("fetched data:\n" + data);
-
         let json = JSON.parse(data);
-        let list = document.getElementsByClassName("center-list");
+        let list = document.getElementsByClassName("list")[0];
+        let msg = document.getElementsByClassName("message")[0];
 
-        for (let i = 0; i < json.length; i++) {
-            let item = json[i];
-            let el = document.createElement("div");
-            el.className = "center-item";
-            el.innerText = item.id + ": " + item.name.trim();
+        msg.innerText = json.message;
 
-            list.appendChild(el); 
+        for (let i = 0; i < json.data.length; i++) {
+            let item = json.data[i];
+            let elItem = itemToNode(item);
+
+            list.appendChild(elItem);
         }
     }
-    catch(ex) {
+    catch (ex) {
         onfail(ex);
     }
 }

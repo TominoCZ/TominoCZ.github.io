@@ -1,10 +1,13 @@
-[
-    {
-        "id": 69,
-        "name": "Artist - Track"
-    },
-    {
-        "id": 420,
-        "name": "Artist - Idk"
-    }
-]
+{
+    "message": "These are maps that will be put in Sound Space",
+    "data": [
+        {
+            "id": 69420,
+            "name": "Morphox - Nightune"
+        },
+        {
+            "id": 420,
+            "name": "Artist - Idk"
+        }
+    ]
+}
