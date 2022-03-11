@@ -2,12 +2,20 @@
     "message": "These songs are coming to the game!",
     "data": [
         {
-            "id": 69420,
-            "name": "Morphox - Nightune"
+            "id": "N/A",
+            "name": "Vizunavé - Alexithymia (150 BPM)"
         },
         {
-            "id": 420,
-            "name": "Artist - Idk"
+            "id": "N/A",
+            "name": "Vizunavé - //along/the/mystic// (200 BPM)"
+        },
+        {
+            "id": "N/A",
+            "name": "CLIKK - SHOOT TO KILL (134 BPM)"
+        },
+        {
+            "id": "N/A",
+            "name": "CLIKK - TOWER BLOCK DUB (136 BPM)"
         }
     ]
 }
