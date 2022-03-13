@@ -31,6 +31,7 @@
 
 .list {
     width: 50%;
+    margin-bottom: 200px;
 }
 
 .item {
@@ -45,7 +46,7 @@
     color: rgb(255, 220, 82);
 }
 
-.track-id {
+.track-desc {
     color: rgb(84, 183, 255);
 }
 

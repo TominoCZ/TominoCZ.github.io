@@ -1,5 +1,5 @@
 ﻿async function pull() {
-    let resp = await fetch("./root/data.json");
+    let resp = await fetch("https://gist.githubusercontent.com/TominoCZ/0325f5528ac7404beb76ac240841f8e4/raw/");//("./root/data.json");
     let data = await resp.text();
 
     return data;
@@ -14,8 +14,8 @@ function createNode(item) {
     elName.innerText = item.name;
 
     let elID = document.createElement("p");
-    elID.className = "track-id";
-    elID.innerText = item.id;
+    elID.className = "track-desc";
+    elID.innerText = item.desc;
 
     elItem.appendChild(elName);
     elItem.appendChild(elID);
@@ -30,7 +30,6 @@ async function load() {
     let msg = document.getElementsByClassName("message")[0];
     let list = document.getElementsByClassName("list")[0];
     let splitter = document.getElementsByClassName("splitter")[0];
-
     splitter.innerText = "- (" + json.data.length + ") -";
     msg.innerText = json.message;
 
@@ -41,15 +40,5 @@ async function load() {
         list.appendChild(elItem);
     }
 }
-
-/*
-let msg = document.getElementsByClassName("message")[0];
-let list = document.getElementsByClassName("list")[0];
-let splitter = document.getElementsByClassName("splitter")[0];
-
-splitter.innerText = "- (" + 1 + ") -";
-let elItem = createNode({ name: "test - test", id: 9 });
-msg.innerText = "These are maps that will be put in Sound Space!"
-list.appendChild(elItem);*/
 
 load();
